@@ -14,7 +14,6 @@
                              (map max ws acc)))
                          (map (comp count str) ks')
                          rows')
-          max-k (apply max widths)
           spacers (map #(apply str (repeat % "-")) widths)
           fmts (map #(str "%" % "s") widths)
           fmt-row (fn [leader nexter divider trailer row]
