@@ -1,10 +1,10 @@
-(ns prime-times.primes-test
+(ns prime-times.math-test
   (:require [clojure.test :refer :all]
-            [prime-times.primes :as primes]))
+            [prime-times.math :as m]))
 
 (deftest prime?
-  (testing "primes numbers"
-    (are [n] (primes/prime? n)
+  (testing "prime numbers"
+    (are [n] (m/prime? n)
       2 3 5 7 11)))
 
 #_(defn p67 [__]

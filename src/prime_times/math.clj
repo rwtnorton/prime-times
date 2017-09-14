@@ -1,4 +1,4 @@
-(ns prime-times.primes)
+(ns prime-times.math)
 
 (defn prime?
   "Returns true iff given number is prime."
