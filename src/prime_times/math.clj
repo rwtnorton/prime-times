@@ -21,3 +21,11 @@
   "Returns seq of the first n many primes."
   [n]
   (take n primes))
+
+(defn nth-prime
+  "Returns the nth prime (zero-indexed)."
+  [n]
+  (-> n
+      inc
+      n-primes
+      last))

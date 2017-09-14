@@ -22,3 +22,16 @@
     2 [2 3]
     3 [2 3 5]
     10 [2 3 5 7 11 13 17 19 23 29]))
+
+(deftest nth-prime
+  (are [n expected] (= (m/nth-prime n) expected)
+    0 2
+    1 3
+    2 5
+    3 7
+    4 11
+    5 13
+    6 17
+    7 19
+    8 23
+    9 29))
