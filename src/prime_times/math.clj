@@ -12,3 +12,12 @@
         (->> (range 2 (inc m))
              (not-any? multiple?))))
     false))
+
+;; Lazy infinite seq of all primes.  Implicitly memoizes.
+;; CAVEAT: Important to avoid accidentally realizing the whole lazy seq!
+(def primes (filter prime? (range)))
+
+(defn n-primes
+  "Returns seq of the first n many primes."
+  [n]
+  (take n primes))
