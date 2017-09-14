@@ -7,8 +7,16 @@ written to stdout.
 
 ```
   $ lein run
-  ### or via bash script:
+  ## or via bash script:
   $ ./bin/prime-times
+  
+  ### display supported options
+  $ lein run -- --help
+  $ ./bin/prime-times --help
+  
+  ### run with a different number of primes (default is 10)
+  $ lein run -- --count 13
+  $ ./bin/prime-times --count 13
 ```
 
 ## Tests
